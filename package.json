@@ -1,0 +1,22 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/Dmitriy-Grabovskiy/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Dmitriy-Grabovskiy/frontend-project-46/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitriy-Grabovskiy",
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+    "gendiff": "home/frontend-project-46/bin/gendiff.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.6.0",
+    "eslint-config-airbnb": "^19.0.4"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
