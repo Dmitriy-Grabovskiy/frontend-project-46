@@ -1,9 +1,9 @@
-import { readFileSync } from "fs";
-import path, { extname } from "path";
-import { cwd } from "process";
-import parse from "./parsers.js";
-import getDiff from "./getDiff.js";
-import getFormatTree from "./formatter/index.js";
+import { readFileSync } from 'fs';
+import path, { extname } from 'path';
+import { cwd } from 'process';
+import parse from './parsers.js';
+import getDiff from './getDiff.js';
+import getFormatTree from './formatter/index.js';
 
 export default (filepath1, filepath2, format) => {
   const getPath = (filepath) => path.resolve(cwd(), filepath);
