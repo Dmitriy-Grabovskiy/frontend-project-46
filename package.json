@@ -4,7 +4,8 @@
   "description": "[![Actions Status](https://github.com/Dmitriy-Grabovskiy/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Dmitriy-Grabovskiy/frontend-project-46/actions)",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
   },
   "author": "Dmitriy-Grabovskiy",
   "license": "ISC",
@@ -13,16 +14,27 @@
     "gendiff": "bin/gendiff.js"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.7.0",
     "@jest/globals": "^29.7.0",
-    "eslint": "^9.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jest": "^28.6.0",
+    "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.4.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
     "jest": "^29.7.0",
     "prettier": "^3.3.3",
-    "prettier-eslint": "^16.3.0"
+    "prettier-eslint": "^16.3.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.0"
   },
   "dependencies": {
     "commander": "^12.1.0",

@@ -1,15 +1,15 @@
-import stylish from './stylish.js';
-import plain from './plain.js';
-import json from './json.js';
+import stylish from "./stylish.js";
+import plain from "./plain.js";
+import json from "./json.js";
 
-export default (file, format = 'stylish') => {
-  if (format === 'stylish') {
+export default (file, format = "stylish") => {
+  if (format === "stylish") {
     return stylish(file);
   }
-  if (format === 'plain') {
+  if (format === "plain") {
     return plain(file);
   }
-  if (format === 'json') {
+  if (format === "json") {
     return json(file);
   }
   throw new Error(`Unsupported format: ${format}`);
