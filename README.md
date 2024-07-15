@@ -1,15 +1,17 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Dmitriy-Grabovskiy/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Dmitriy-Grabovskiy/frontend-project-46/actions)
 
-Вычислитель отличий
+# Вычислитель отличий
 
-Возможности утилиты:
-Поддержка разных входных форматов: yaml,yml, json
-Генерация отчета в виде plain text, stylish и json
-Пример использования:
-формат plain
-gendiff.js --format plain __fixtures__/file1.json __fixtures__/file2.json
+## Возможности утилиты:
+-Поддержка разных входных форматов: yaml,yml, json
+-Генерация отчета в виде plain text, stylish и json
+## Примеры использования:
 
+### формат plain
+
+`gendiff.js --format plain __fixtures__/file1.json __fixtures__/file2.json`
+```
 Property 'common.follow' was added with value: false
 Property 'common.setting2' was removed
 Property 'common.setting3' was updated. From true to null
@@ -21,10 +23,12 @@ Property 'group1.baz' was updated. From 'bas' to 'bars'
 Property 'group1.nest' was updated. From [complex value] to 'str'
 Property 'group2' was removed
 Property 'group3' was added with value: [complex value]
+```
+### формат stylish
 
-формат stylish
-gendiff.js __fixtures__/file1.json __fixtures__/file2.json
+`gendiff.js __fixtures__/file1.json __fixtures__/file2.json`
 
+```
 {
     common: {
       + follow: false
@@ -69,3 +73,4 @@ gendiff.js __fixtures__/file1.json __fixtures__/file2.json
         fee: 100500
     }
 }
+```
